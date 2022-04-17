@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+}
+.inner-span{
+      display: block;  
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    /* animation-name: inner-span;
+    animation-duration: 4s;
+    transform: scale(2);
+     */
+}
+.inner-span:hover{
+    animation-name: inner-span;
+    animation-duration: 4s;
+    transform: scale(2);
+}
+@keyframes inner-span {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+
+
+.div{
+    
+        width: 100px;
+        height: 100px;
+        position: relative;
+        background-color: red;
+        animation-name: example;
+        animation-duration:4s;
+      
+}  
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+  .div-1 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: ex;
+    animation-duration: infinite;
+  }
+  @keyframes ex {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+  }
+  img { 
+	/* transition: all .2s ease-in-out; 
+    transform: scale(2);  */
+    transition: transform .2s; 
+    transform: scale(0);
+    transition: all .2s ease-in-out;/* Animation */
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+    img:hover{
+
+        /* transform:translateX(0) */
+        transform: scale(1.1);
+    }
+ 
+
+   
+    
+
+ 
+    button{
+
+        padding: 10px;
+        background-color: greenyellow;
+    }
+    .buttonn:hover {
+        background-color: red;
+        color: white;
+
+
+    }
+    .div-4{
+     
+        width: 500px;
+    height: 100px;
+    background: red;
+   
+    transition: transform 1s linear ;
+    transform: translate(-90%);
+
+    }
+   
+.div-4:hover {
+    transform: translateX(0);
+}
